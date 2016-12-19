@@ -1,5 +1,5 @@
 // Mixin Imports
-@import "lib/mappy";
+@import "_lib/mixins/mappy";
 //
 // Mappy usage: @include mappy-bp(1000px) { rules : here; }
 
@@ -12,10 +12,13 @@ $color-1: #3498db;
 $color-2: white;
 
 // Core Import
-@import "typography";
+@import "_lib/typography";
 
 // View Imports
-//@import "home";
+@import "sections/header";
+@import "sections/footer";
+@import "pages/home";
 
 
-// Your SCSS goes below here
+// Your SCSS goes in the scss files for the specific pages located in the imports defined above
+// e.g. your header code goes in sections/header

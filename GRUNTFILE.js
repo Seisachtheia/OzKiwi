@@ -9,15 +9,8 @@
 /****************************************
     0. Grunt Variables
 ****************************************/
-var projectDir = '';
-var privateDir = projectDir + 'private'
-var publicDir = projectDir + 'public'
-
-var privateStyle = privateDir + '/css'
-var privateJS = privateDir + '/js'
-
-var publicStyle = publicDir + '/css'
-var publicJS = publicDir + '/js'
+var privateStyle = 'private/css'
+var publicStyle ='public/css'
 
 /****************************************
     1. Define Grunt Tasks
@@ -39,10 +32,6 @@ module.exports = function (grunt) {
             files: [privateStyle + "/**/*.scss", publicStyle + "/style.css"],
             tasks: ['sass', 'autoprefixer']
         },
-        watch_javascript: {
-            files: privateJS + "/**/*.js",
-            tasks: ['uglify']
-        },
        watch_prefix: {
           files: publicStyle + "/style.css",
           tasks: ['autoprefixer']
@@ -53,21 +42,21 @@ module.exports = function (grunt) {
     3. Uglify JS  
 ****************************************/    
 
-    uglify: {
+    // uglify: {
         
-        options:{
-            sourceMap: false
-        },
-        javascript: {
-            files: [{
-                expand: true,
-                cwd: privateJS,
-                src: ['**/*.js'],
-                dest: publicJS
-            }]
-        }
+    //     options:{
+    //         sourceMap: false
+    //     },
+    //     javascript: {
+    //         files: [{
+    //             expand: true,
+    //             cwd: privateJS,
+    //             src: ['**/*.js'],
+    //             dest: publicJS
+    //         }]
+    //     }
         
-    },	
+    // },	
 
     //ts: {
     //  default : {
@@ -113,9 +102,9 @@ module.exports = function (grunt) {
     copy: {
         main: {
             expand: true,
-            cwd: privateDir,
+            cwd: 'private',
             src: ['**', '!**/scripts/**', '!**/styles/**'],
-            dest: publicDir + '/',
+            dest: 'public/',
         },
     },  
 
@@ -126,11 +115,11 @@ module.exports = function (grunt) {
 
     browserSync: {
         bsFiles: {
-            src : [publicDir]
+            src : ['public/']
         },
         options: {
             server: {
-                baseDir: [publicDir]            
+                baseDir: ['public/']            
             },
             notify:{
                 styles: {
