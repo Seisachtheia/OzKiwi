@@ -66,8 +66,12 @@ html {
 }
 
 .header-banner {
-    width:100%;
+    width:auto;
     height:400px;
-    content:contain;
     padding-top:5px;
+    border-bottom: 2px solid orange;
+
+    img {
+        max-width:100%;
+    }
 }
