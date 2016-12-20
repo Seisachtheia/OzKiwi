@@ -32,9 +32,23 @@ html {
 .header-banner {
     width:auto;
     height:500px;
-    padding-top:5px;
+    padding-top:15px;
     border-bottom: 2px solid orange;
     background-image: url('../images/banner.jpg');
     background-size: cover;
     position:center;
+}
+
+.content-container {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:150px;
+}
+
+
+.content {
+    width:60%;
+    padding-top:40px;
+    text-align: left;
 }
