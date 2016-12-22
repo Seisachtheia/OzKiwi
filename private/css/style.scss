@@ -71,14 +71,25 @@ h2 {
 }
 
 .front-page-tab-view {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    
      li {
          display: inline-block;
+         padding: 0 15px 15px 15px;
+
      }
 
      a {
-         //font styles
+         font-size:20px;
+         text-decoration:none;
+         color:gray;
+         border:bottom 2px gray;
+
          .active {
              //style if the item is active
+             color:#363636;
          }
      }
 }
