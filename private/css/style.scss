@@ -102,4 +102,11 @@ h2 {
     .news-item {
         list-style-type:none;
     }
+
+    .news-img {
+        background-image: url('../images/1.png');
+        background-size: cover;
+        height:400px;
+        width:400px;
+    }
 }
