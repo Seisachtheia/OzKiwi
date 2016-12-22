@@ -75,9 +75,13 @@ h2 {
     margin-left:auto;
     margin-right:auto;
     
+
+    
      li {
          display: inline-block;
          padding: 0 15px 15px 15px;
+         border-bottom:solid 2px gray;
+         
 
      }
 
@@ -85,11 +89,13 @@ h2 {
          font-size:20px;
          text-decoration:none;
          color:gray;
-         border:bottom 2px gray;
+         
+         
 
          .active {
              //style if the item is active
              color:#363636;
+             border-bottom:solid 2px orange;
          }
      }
 }
@@ -101,12 +107,19 @@ h2 {
     
     .news-item {
         list-style-type:none;
+        margin-top:20px;
     }
 
     .news-img {
+        display:inline-block;
         background-image: url('../images/1.png');
         background-size: cover;
-        height:400px;
-        width:400px;
+        width:30em;
+        height:15em;
+    }
+
+    .news-item-text-content {
+        display:inline-block;
+        top:0;
     }
 }
