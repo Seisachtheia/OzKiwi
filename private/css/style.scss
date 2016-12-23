@@ -63,11 +63,13 @@ h2 {
 }
 
 .AusNZ-coa {
+    float:right;
     background-image: url('../images/australianz.png');
     background-size: cover;
-    height:100%;
-    float:right;
-    
+    height: 15em;
+    width: 20em;
+    margin-right:4em;
+       
 }
 
 .front-page-tab-view {
@@ -120,6 +122,12 @@ h2 {
 
     .news-item-text-content {
         display:inline-block;
-        top:0;
+        padding:15px;
+        
+    }
+
+    .cont-reading {
+        text-transform:uppercase;
+        color:
     }
 }
