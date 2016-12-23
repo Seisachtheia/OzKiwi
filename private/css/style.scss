@@ -30,6 +30,7 @@ html {
 
 
 .header-banner {
+    
     width:auto;
     height:500px;
     padding-top:15px;
@@ -37,10 +38,29 @@ html {
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position:center bottom;
+    color:white;
+    font-size:20px;
+
+    .top-left {
+        
+        margin-left:20%;
+        margin-top: 5%;
+    }
+
+    .bottom-right {
+        
+        float:right;
+        margin-right:30%;
+        margin-top:12%;
+    }
+
+    h3 {
+        font-size:34px;
+    }
 }
 
 .content-container {
-    width:80%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
     margin-top:150px;
@@ -68,12 +88,13 @@ h2 {
     background-size: cover;
     height: 15em;
     width: 20em;
-    margin-right:4em;
+    margin-right:6em;
+    
        
 }
 
 .front-page-tab-view {
-    width:80%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
     
@@ -103,7 +124,7 @@ h2 {
 }
 
 .news-dock {
-    width:80%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
     
