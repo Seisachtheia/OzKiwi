@@ -5,13 +5,17 @@
 
 
 // Variables  
+$desktop: 1024px;
+$tablet: 600px;
+$iphone5: 320px;
+
 $page-width: 1050px;
 $tablet-width: 600px;
 
 $color-1: #3498db;
 $color-2: white;
 
-$main-width: 60% ;
+$main-width: $desktop;
 
 // Core Import
 @import "_lib/typography";
@@ -25,136 +29,3 @@ $main-width: 60% ;
 // Your SCSS goes in the scss files for the specific pages located in the imports defined above
 // e.g. your header code goes in sections/header
 
-html {
-    padding: 0;
-    margin: 0;
-}
-
-.header-logo {
-    background-image: url('../images/ozkiwi.jpg');
-    background-size:cover;
-}
-
-.header-banner {
-    
-    width:auto;
-    height:500px;
-    padding-top:15px;
-    border-bottom: 2px solid orange;
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
-    background-position:center bottom;
-    color:white;
-    font-size:20px;
-
-    .top-left {
-        
-        margin-left:20%;
-        margin-top: 5%;
-    }
-
-    .bottom-right {
-        
-        float:right;
-        margin-right:30%;
-        margin-top:12%;
-    }
-
-    h3 {
-        font-size:34px;
-    }
-}
-
-.content-container {
-    width:$main-width;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:150px;
-    margin-bottom:200px;
-}
-
-h1 {
-    font-size:24px
-}
-
-h2 {
-    font-size:14px;
-}
-
-.content {
-    float:left;
-    width:$main-width;
-    padding-top:40px;
-    text-align: left;
-}
-
-.AusNZ-coa {
-    float:right;
-    background-image: url('../images/australianz.png');
-    background-size: cover;
-    height: 15em;
-    width: 20em;
-    margin-right:6em;
-    
-       
-}
-
-.front-page-tab-view {
-    width:$main-width;
-    margin-left:auto;
-    margin-right:auto;
-    
-
-    
-     li {
-         display: inline-block;
-         padding: 0 15px 15px 15px;
-         border-bottom:solid 2px gray;
-         
-
-     }
-
-     a {
-         font-size:20px;
-         text-decoration:none;
-         color:gray;
-         
-         
-
-         .active {
-             //style if the item is active
-             color:#363636;
-             border-bottom:solid 2px orange;
-         }
-     }
-}
-
-.news-dock {
-    width:$main-width;
-    margin-left:auto;
-    margin-right:auto;
-    
-    .news-item {
-        list-style-type:none;
-        margin-top:20px;
-    }
-
-    .news-img {
-        display:inline-block;
-        background-image: url('../images/1.png');
-        background-size: cover;
-        width:30em;
-        height:15em;
-    }
-
-    .news-item-text-content {
-        display:inline-block;
-        padding:15px;
-        
-    }
-
-    .cont-reading {
-        text-transform:uppercase;
-        color:#363636;
-    }
-}

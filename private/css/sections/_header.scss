@@ -11,10 +11,42 @@
     width:125px;
     position:absolute;
     padding-left:4px;
+    background-image: url('../images/ozkiwi.jpg');
+    background-size:cover;
 
     img {
         display:inline-block;
         padding:2px;
+    }
+}
+
+.header-banner {
+    
+    width:auto;
+    height:500px;
+    padding-top:15px;
+    border-bottom: 2px solid orange;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position:center bottom;
+    color:white;
+    font-size:20px;
+
+    .top-left {
+        
+        margin-left:20%;
+        margin-top: 5%;
+    }
+
+    .bottom-right {
+        
+        float:right;
+        margin-right:30%;
+        margin-top:12%;
+    }
+
+    h3 {
+        font-size:34px;
     }
 }
 

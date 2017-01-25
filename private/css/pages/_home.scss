@@ -1,0 +1,74 @@
+.main-article {
+    float:left;
+    width:calc(93% - 20em);
+    padding-top:40px;
+    text-align: left;
+}
+
+.AusNZ-coa {
+    float:right;
+    background-image: url('../images/australianz.png');
+    background-size: cover;
+    height: 15em;
+    width: 20em;       
+}
+
+.front-page-tab-view {
+    width:$main-width;
+    margin-left:auto;
+    margin-right:auto;
+    
+
+    
+     li {
+         display: inline-block;
+         padding: 0 15px 15px 15px;
+         border-bottom:solid 2px gray;
+         
+
+     }
+
+     a {
+         font-size:20px;
+         text-decoration:none;
+         color:gray;
+         
+         
+
+         .active {
+             //style if the item is active
+             color:#363636;
+             border-bottom:solid 2px orange;
+         }
+     }
+}
+
+.news-dock {
+    width:$main-width;
+    margin-left:auto;
+    margin-right:auto;
+    
+    .news-item {
+        list-style-type:none;
+        margin-top:20px;
+    }
+
+    .news-img {
+        display:inline-block;
+        background-image: url('../images/1.png');
+        background-size: cover;
+        width:30em;
+        height:15em;
+    }
+
+    .news-item-text-content {
+        display:inline-block;
+        padding:15px;
+        
+    }
+
+    .cont-reading {
+        text-transform:uppercase;
+        color:#363636;
+    }
+}
