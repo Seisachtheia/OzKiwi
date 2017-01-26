@@ -1,5 +1,5 @@
 .header-navi {
-    width:60%;
+    max-width:1024px;
     height:60px;
     margin-left:auto;
     margin-right:auto;
@@ -10,47 +10,12 @@
     height:52px;
     width:125px;
     position:absolute;
-    padding-left:4px;
     background-image: url('../images/ozkiwi.jpg');
     background-size:cover;
 
     img {
         display:inline-block;
         padding:2px;
-    }
-}
-
-.header-banner {
-    position:relative;
-    width:auto;
-    height:500px;
-    padding-top:15px;
-    border-bottom: 2px solid orange;
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
-    background-position:center bottom;
-    color:white;
-    font-size:20px;
-
-    .top-left {
-        
-        margin-left:20%;
-        margin-top: 5%;
-    }
-
-    .bottom-right {
-        display: inline-block;
-        position: absolute;
-        bottom: 40px;
-        right: calc( 50% - (#{$desktop} / 2))
-        bottom: 50%;
-        transform: translateY(-50%);
-    }
-        
-    }
-
-    h3 {
-        font-size:34px;
     }
 }
 

@@ -1,3 +1,41 @@
+.header-banner {
+    position:relative;
+    width:auto;
+    height:500px;
+    padding-top:15px;
+    border-bottom: 2px solid orange;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position:center bottom;
+    color:white;
+    font-size:20px;
+
+    .top-left {
+        display:inline-block;
+        position:absolute;
+        left:calc( 49% - (#{$desktop} / 2));
+        top:20%;
+        transform: translateY(-50%);
+    }
+
+    .bottom-right {
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        right: calc( 50% - (#{$desktop} / 2));
+        bottom: 10%;
+        transform: translateY(-50%);
+    }
+
+    h3 {
+        font-size:34px;
+    }
+
+    a {
+        text-decoration: underline;                
+    }
+}
+
 .main-article {
     float:left;
     width:calc(93% - 20em);
@@ -79,7 +117,7 @@
         p {
             color:gray;
             font-size: 16px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         span {
@@ -92,5 +130,8 @@
     .cont-reading {
         text-transform:uppercase;
         color:#363636;
+        font-weight:700;
+        font-size:12px;
+        
     }
 }
