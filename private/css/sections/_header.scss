@@ -21,7 +21,7 @@
 }
 
 .header-banner {
-    
+    position:relative;
     width:auto;
     height:500px;
     padding-top:15px;
@@ -39,10 +39,14 @@
     }
 
     .bottom-right {
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        right: calc( 50% - (#{$desktop} / 2))
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
         
-        float:right;
-        margin-right:30%;
-        margin-top:12%;
     }
 
     h3 {
