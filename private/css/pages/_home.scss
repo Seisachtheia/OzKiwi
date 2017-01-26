@@ -63,7 +63,13 @@
 
     .news-item-text-content {
         display:inline-block;
+        vertical-align:top;
         padding:15px;
+
+        h6 {
+            color:teal;
+            font-size: 16px;
+        }
         
     }
 
